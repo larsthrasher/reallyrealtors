@@ -2,13 +2,14 @@
 
 {% load static %}
 
+{% block title %} | About Us{% endblock %}
+
 {% block content %}
   <section id="showcase-inner" class="py-5 text-white">
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
           <h1 class="display-4">About Really Realtors</h1>
-          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
         </div>
       </div>
     </div>
@@ -33,17 +34,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <h2>We Search For The Perfect Home</h2>
-          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+          <h2>We've got a lot of great spots!</h2>
+          <p class="lead">You'll probably like them.</p>
           <img src="{% static 'img/about.jpg' %}" alt="">
-          <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia repudiandae ad saepe ex, amet
-            neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis? Exercitationem at quaerat
-            commodi id libero eveniet harum perferendis laborum molestias quia.</p>
+          <p class="mt-4">Just put some plants up.  Open up the curtains and let the light really shine in.  It's important to let the plants have plenty of sun exposure.  That and a new, fresh coat of paint, and your purchase won't seem so unreasonable.</p>
         </div>
         <div class="col-md-4">
           {% if mvp_realtors %}
             {% for realtor in mvp_realtors %}
-                <div class="card">
+                <br/>
+                <br/>
+                <div class="card mt-xl-5">
                   <img class="card-img-top" src="{{ realtor.photo.url }}" alt="Seller of the month">
                   <div class="card-body">
                     <h5 class="card-title">Seller Of The Month</h5>
@@ -62,9 +63,9 @@
   <!-- Work -->
   <section id="work" class="bg-dark text-white text-center">
     <h2 class="display-4">We Work Hard For The Money</h2>
-    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4>
+    <h4>We'll do the same for you...cause that's how we get paid, lol!</h4>
     <hr>
-    <a href="{% url 'listings' %}" class="btn btn-info text-white btn-lg">View Our Featured Listings</a>
+    <a href="{% url 'listings' %}" class="btn btn-info text-white btn-lg">View Our Spots</a>
   </section>
 
   <!-- Team -->

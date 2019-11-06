@@ -85,7 +85,7 @@
                   </div>
                   <div class="card-body">
                     <div class="listing-heading text-center">
-                      <h4 class="text-primary">{{ listing.title | intcomma }}</h4>
+                      <h4 class="text-primary">{{ listing.title }}</h4>
                       <p>
                         <i class="fas fa-map-marker text-info"></i> {{ listing.city }}, {{ listing.state }} {{ listing.zipcode }}</p>
                     </div>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="row text-info pb-2">
                       <div class="col-6">
-                        <i class="fas fa-clock"></i> {{ listing.list_date | timesince }}</div>
+                        <i class="fas fa-clock"></i>{{ listing.list_date | timesince }}</div>
                     </div>
                     <hr>
                     <a href="{% url 'listing' listing.id %}" class="btn btn-primary btn-block">More Info</a>
